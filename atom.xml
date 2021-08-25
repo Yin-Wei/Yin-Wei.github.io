@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Yin-Wei</title>
+  <title>Luckey</title>
   
-  <subtitle>尹伟的博客</subtitle>
+  <subtitle>Luckeyの博客</subtitle>
   <link href="https://yin-wei.github.io/atom.xml" rel="self"/>
   
   <link href="https://yin-wei.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://yin-wei.github.io/</id>
   
   <author>
-    <name>Yin-Wei</name>
+    <name>Luckey</name>
     
   </author>
   
