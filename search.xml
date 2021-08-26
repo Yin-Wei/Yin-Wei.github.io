@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>JavaSE</title>
+      <link href="posts/19d2a4e6.html"/>
+      <url>posts/19d2a4e6.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaSE篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> javase </tag>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo之渲染绕过</title>
       <link href="posts/17fd92ae.html"/>
       <url>posts/17fd92ae.html</url>
