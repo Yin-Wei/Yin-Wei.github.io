@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo之渲染绕过, 尹伟 计算机 网络工程  java">
+    <meta name="keywords" content="JavaSE, 尹伟 计算机 网络工程  java">
     <meta name="description" content="本科 | 辽宁工业大学 | 网络工程">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo之渲染绕过 | YinWei的博客</title>
+    <title>JavaSE | YinWei的博客</title>
 
     <link rel="icon" type="image/jpeg" href="https://s1.ax1x.com/2020/05/17/YR20js.jpg">
 
@@ -356,12 +356,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928015500.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928014727.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo之渲染绕过</h1>
+                    <h1 class="description center-align post-title">JavaSE</h1>
                 </div>
             </div>
         </div>
@@ -482,12 +482,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/tags/javase/">
+                                <span class="chip bg-color">javase</span>
                             </a>
                         
-                            <a href="/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/">
-                                <span class="chip bg-color">渲染绕过</span>
+                            <a href="/tags/java/">
+                                <span class="chip bg-color">java</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                <span class="chip bg-color">博客</span>
                             </a>
                         
                     </div>
@@ -498,8 +502,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="post-category">
-                                博客篇
+                            <a href="/categories/JavaSE%E7%AF%87/" class="post-category">
+                                JavaSE篇
                             </a>
                         
                     </div>
@@ -511,21 +515,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-28
+                    2021-08-27
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-06-12
+                    2021-08-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    463
+                    412
                 </div>
                 
 
@@ -550,46 +554,31 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="0x001-Hexo-渲染"><a href="#0x001-Hexo-渲染" class="headerlink" title="0x001 Hexo 渲染"></a>0x001 Hexo 渲染</h3><p>  在Hexo部署时会默认渲染source下的所有html页面，但有时候想在Hexo博客上单独自定义html页面或README.md时，却不希望被Hexo渲染。因此对某个文件或者目录进行排除渲染是非常必要的。</p>
-<h3 id="0x002-方法一：font-matter"><a href="#0x002-方法一：font-matter" class="headerlink" title="0x002 方法一：font matter"></a>0x002 方法一：font matter</h3><p><code>Hexo</code>新建网站页面，然后将你的代码直接写入 <code>index.md</code> 中</p>
-<p>在 <code>Front matter</code> 中添加 <code>layout: false</code>，此方法适用于单一的纯<code>HTML</code><br><code>CSS</code> 页面。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">---
-title: tools
-date: <span class="token number">2020</span>-04-28 00:00:00
-type: <span class="token string">"tools"</span>
-layout: <span class="token boolean">false</span>
----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><pre><code>本文主要记录在JavaSE学习过程中的知识点以及遇到的问题和解决办法</code></pre>
+<h1 id="一、Java语法"><a href="#一、Java语法" class="headerlink" title="一、Java语法"></a>一、Java语法</h1><h2 id="1-注释"><a href="#1-注释" class="headerlink" title="1.注释"></a>1.注释</h2><hr>
+<p>1.java规范的三种注释方式：<br>单行注释<br>//…..<br>多行注释<br>/*<br>…..<br>*/<br>文档注释（Java特有）<br>/**<br>…..<br>*/<br>2.单行注释和多行注释的作用<br>（1）对所写的程序进行解释说明 增强可读性 方便自己 方便别人<br>（2）可以调试所写代码<br>3.特点：单行注释和多行注释注释了的内容不参与编译。<br>4.文档注释的使用：<br>注释内容可以被 <code>jdk</code> 提供的工具所解析，生成一套以网页文件形式体现的该程序的说明文档<br>5.多行注释不可以嵌套使用</p>
+<hr>
+<h2 id="2-第一段Java程序-helloworld"><a href="#2-第一段Java程序-helloworld" class="headerlink" title="2.第一段Java程序 helloworld"></a>2.第一段Java程序 helloworld</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">//argumentes:参数</span>
+    <span class="token comment">//单行注释：如下语句表示输出到控制台</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hello,World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//先输出数据，然后换行</span>
+    <span class="token comment">// Sout+回车--&gt;自动生成输出语句</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Hello,World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//只输出数据不换行</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="0x003-方法二：skip-render"><a href="#0x003-方法二：skip-render" class="headerlink" title="0x003 方法二：skip render"></a>0x003 方法二：skip render</h3><p>在博客根目录下的 <code>_config.yml</code>，找到 <code>skip_render</code>，大概在32行左右，写入你想要的跳过渲染的路径，注意缩进和空格。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 指定目录跳过hexo渲染</span>
-skip_render:
-  - <span class="token string">'tools/*'</span>
-  - <span class="token string">'tools/**'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="3-常量"><a href="#3-常量" class="headerlink" title="3.常量"></a>3.常量</h2><hr>
+<p>常量:在程序运行过程中，其值不会发生改变的数据。<br>常量的分类：<br>字符串常量:被双引号包裹的内容<br>整数常量:所以整数<br>小数常量:所有小数<br>字符常量:被单引号所包裹的内容<br>布尔常量:true false<br>空常量 null –&gt; 不能直接打印<br>ctrl+D:向下复制一行</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"HelloWorld"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">12.3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">'中'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token operator">&gt;</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//不能直接打印</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<blockquote>
-<p>注释：<code>tools/*</code> 表示在目录 <code>source/fireworks</code> 下的文件全部跳过渲染，<code>tools/**</code> 表示在博客根目录 <code>source/tools/</code> 文件夹下的文件全部跳过渲染（例如页面的 js、css 在另一个文件夹中）。</p>
-</blockquote>
-<h3 id="0x004-案例：webstack-导航"><a href="#0x004-案例：webstack-导航" class="headerlink" title="0x004 案例：webstack 导航"></a>0x004 案例：webstack 导航</h3><p><code>webstack</code>是一个纯静态的网址导航网站，内容均由<code>viggo</code>收集并整理。项目基于<code>bootstrap</code>前端框架开发。</p>
-<p><img src="https://camo.githubusercontent.com/41111c4c1d9922982f380566e6a2f8415204c52c/687474703a2f2f7777772e776562737461636b2e63632f6173736574732f696d616765732f707265766965772e676966" alt="image"></p>
-<ul>
-<li>Github：<a target="_blank" rel="noopener" href="https://github.com/WebStackPage/WebStackPage.github.io">https://github.com/WebStackPage/WebStackPage.github.io</a></li>
-</ul>
-<p>在博客根目录 <code>source/</code>下新建<code>tools</code>，然后新建<code>index.html</code>,将<code>webstack</code>网页源码全选复制粘贴到里面。</p>
-<ul>
-<li>本站的webstack源码：<a href="view-source:http://luckyzmj.cn/tools/">view-source:http://luckyzmj.cn/tools/</a></li>
-</ul>
-<blockquote>
-<p>注意：将源码里的部分信息以及跳转链接按照你真实个人博客的环境进行修改。</p>
-</blockquote>
-<p>然后打开博客根目录下配置文件<code>_config.yml</code>，找到<code>skip_render</code>，做如下修改：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">skip_render:
-  - <span class="token string">'tools/*'</span>
-  - <span class="token string">'tools/**'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p>最后执行<code>hexo clean</code>和<code>hexo s -g </code>本地预览，检查无误后<code>hexo g -d</code>部署到服务器上即可。</p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://xiabor.com/2020/04/21/hexo3/#%E5%A6%82%E4%BD%95%E8%B7%B3%E8%BF%87hexo%E7%9A%84%E6%B8%B2%E6%9F%93">https://xiabor.com/2020/04/21/hexo3/#%E5%A6%82%E4%BD%95%E8%B7%B3%E8%BF%87hexo%E7%9A%84%E6%B8%B2%E6%9F%93</a></li>
-</ul>
+<hr>
 
                 
             </div>
@@ -606,7 +595,7 @@ skip_render:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">Luckey</a>
+                    <a href="/about" rel="external nofollow noreferrer">尹伟</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -616,7 +605,7 @@ skip_render:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://yin-wei.github.io/posts/17fd92ae.html">https://yin-wei.github.io/posts/17fd92ae.html</a>
+                    <a href="https://yin-wei.github.io/posts/2b32338b.html">https://yin-wei.github.io/posts/2b32338b.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -629,7 +618,7 @@ skip_render:
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">Luckey</a>
+                    <a href="/about" target="_blank">尹伟</a>
                     !
                 </span>
             </div>
@@ -654,12 +643,16 @@ skip_render:
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
+                                <a href="/tags/javase/">
+                                    <span class="chip bg-color">javase</span>
                                 </a>
                             
-                                <a href="/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/">
-                                    <span class="chip bg-color">渲染绕过</span>
+                                <a href="/tags/java/">
+                                    <span class="chip bg-color">java</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                    <span class="chip bg-color">博客</span>
                                 </a>
                             
                         </div>
@@ -1131,11 +1124,12 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/19d2a4e6.html">
+                <a href="/posts/2b32338b.html">
                     <div class="card-image">
                         
                         
@@ -1151,9 +1145,9 @@ new Valine({
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1166,12 +1160,9 @@ new Valine({
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
-                    </a>
                     
                     <a href="/tags/javase/">
                         <span class="chip bg-color">javase</span>
@@ -1179,6 +1170,10 @@ new Valine({
                     
                     <a href="/tags/java/">
                         <span class="chip bg-color">java</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
                     </a>
                     
                 </div>
@@ -1192,31 +1187,31 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/4b3510a4.html">
+                <a href="/posts/19d2a4e6.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928020120.jpg" class="responsive-img" alt="文字背景粒子特效">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928011708.jpg" class="responsive-img" alt="阿里云服务器部署Hexo博客">
                         
-                        <span class="card-title">文字背景粒子特效</span>
+                        <span class="card-title">阿里云服务器部署Hexo博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一款jQuery+CSS3的文字背景粒子动画特效，一共6种粒子效果，每种文字背景的粒子效果都不同，有漂浮的有坠落的等等。 
+                            相信大部分人使用Hexo搭建个人博客都会部署到一些免费的代码托管平台上，但这些免费的平台总是差强人意，今天记录下如何在自己的云服务器上搭建Hexo博客。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-27
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
-                                    前端篇
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="post-category">
+                                    博客篇
                                 </a>
                             
                             
@@ -1226,12 +1221,16 @@ new Valine({
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/jQuery-CSS3/">
-                        <span class="chip bg-color">jQuery+CSS3</span>
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
                     </a>
                     
-                    <a href="/tags/%E7%B2%92%E5%AD%90%E7%89%B9%E6%95%88/">
-                        <span class="chip bg-color">粒子特效</span>
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91/">
+                        <span class="chip bg-color">阿里云</span>
                     </a>
                     
                 </div>
@@ -1471,7 +1470,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">10.2k</span>&nbsp;字
+                class="white-color">9.2k</span>&nbsp;字
             
             
             
