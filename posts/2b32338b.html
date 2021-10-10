@@ -482,16 +482,16 @@
                     
                     <div class="article-tag">
                         
+                            <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                <span class="chip bg-color">博客</span>
+                            </a>
+                        
                             <a href="/tags/javase/">
                                 <span class="chip bg-color">javase</span>
                             </a>
                         
                             <a href="/tags/java/">
                                 <span class="chip bg-color">java</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                                <span class="chip bg-color">博客</span>
                             </a>
                         
                     </div>
@@ -529,7 +529,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.3k
                 </div>
                 
 
@@ -557,13 +557,13 @@
                 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><pre><code>本文主要记录在JavaSE学习过程中的知识点以及遇到的问题和解决办法</code></pre>
 <h1 id="一、-认识Java"><a href="#一、-认识Java" class="headerlink" title="一、 认识Java"></a>一、 认识Java</h1><p>1.Java是一门面向对象的语言；面向对象（Object Oriented）简称OO                </p>
 <p>面向对象与面向过程是两种有代表性的编程思想                        </p>
-<p>面向对象思想有三大特征：==封装、继承、多态==</p>
+<p>面向对象思想有三大特征：<code>封装、继承、多态</code></p>
 <p>对象：现实生活中的实体。是一个具体的概念。有属性和行为                    </p>
 <p>类：具备相同属性和行为的一组对象的集合。是一个抽象的概念                </p>
 <p>对象和类的关系：对象是类的实例，类是对象的集合                    </p>
 <hr>
 <h1 id="二、Java语言基础"><a href="#二、Java语言基础" class="headerlink" title="二、Java语言基础"></a>二、Java语言基础</h1><h2 id="1-注释"><a href="#1-注释" class="headerlink" title="1.注释"></a>1.注释</h2><hr>
-<p>1.java规范的三种注释方式：<br>单行注释<br>// …<br>多行注释<br>/*<br> …<br>*/<br>文档注释（Java特有）<br>/**<br> …<br>*/<br>2.单行注释和多行注释的作用<br>（1）对所写的程序进行解释说明 增强可读性 方便自己 方便别人<br>（2）可以调试所写代码<br>3.特点：单行注释和多行注释注释了的内容不参与编译。<br>4.文档注释的使用：<br>注释内容可以被 <code>jdk</code> 提供的工具所解析，生成一套以网页文件形式体现的该程序的说明文档<br>5.多行注释不可以嵌套使用</p>
+<p>1.java规范的三种注释方式：<br>单行注释<br>// …<br>多行注释<br>/*<br> …<br>*/<br>文档注释（Java特有）<br>/**<br> …<br>*/<br>2.单行注释和多行注释的作用<br>（1）对所写的程序进行解释说明 增强可读性 方便自己 方便别人<br>（2）可以调试所写代码<br>3.特点：单行注释和多行注释注释了的内容不参与编译。<br>4.文档注释的使用：<br>注释内容可以被 <code>jdk</code>提供的工具所解析，生成一套以网页文件形式体现的该程序的说明文档<br>5.多行注释不可以嵌套使用</p>
 <hr>
 <h2 id="2-第一段Java程序-helloworld"><a href="#2-第一段Java程序-helloworld" class="headerlink" title="2.第一段Java程序 helloworld"></a>2.第一段Java程序 helloworld</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">//argumentes:参数</span>
     <span class="token comment">//单行注释：如下语句表示输出到控制台</span>
@@ -659,12 +659,95 @@
 <p><strong><em>注意：</em></strong></p>
 <p>在定义long类型变量的时候，需要加入L的标识（大小写都可以建议大写）</p>
 <p>在定义float类型的时候需要加入F标识（大小写都可以）因为小数默认是double</p>
-<p>Java中的数据类型分为 基本数据类型 和 引用数据类型</p>
+<p>Java中的数据类型分为 <code>基本数据类型</code> 和 <code>引用数据类型</code></p>
+<p>基本数据类型分为 数值型、字符型、布尔型</p>
+<p>引用数据类型分为 类、接口、枚举、注解、数组</p>
 <h2 id="8-控制台输入"><a href="#8-控制台输入" class="headerlink" title="8.控制台输入"></a>8.控制台输入</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Scanner</span> sc <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//召唤Scanner,起名叫sc</span>
 <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"请输入一个整数"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">int</span> a <span class="token operator">=</span> sc<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h2 id="9-运算符"><a href="#9-运算符" class="headerlink" title="9.运算符"></a>9.运算符</h2><p>运算符有：算术运算符、关系运算符、位运算符、逻辑运算符、赋值运算符、比较运算符、三元运算符等</p>
+<p>运算符优先级</p>
+<table>
+<thead>
+<tr>
+<th>优先级</th>
+<th>运算符</th>
+<th>结合性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>()、[]、{}</td>
+<td>从左向右</td>
+</tr>
+<tr>
+<td>2</td>
+<td>!、+、-、~、++、–</td>
+<td>从右向左</td>
+</tr>
+<tr>
+<td>3</td>
+<td>*、/、%</td>
+<td>从左向右</td>
+</tr>
+<tr>
+<td>4</td>
+<td>+、-</td>
+<td>从左向右</td>
+</tr>
+<tr>
+<td>5</td>
+<td>«、»、&gt;&gt;&gt;</td>
+<td>从左向右</td>
+</tr>
+<tr>
+<td>6</td>
+<td>&lt;、&lt;=、&gt;、&gt;=、instanceof</td>
+<td>从左向右</td>
+</tr>
+<tr>
+<td>7</td>
+<td>==、!=</td>
+<td>从左向右</td>
+</tr>
+<tr>
+<td>8</td>
+<td>&amp;</td>
+<td>从左向右</td>
+</tr>
+<tr>
+<td>9</td>
+<td>^</td>
+<td>从左向右</td>
+</tr>
+<tr>
+<td>10</td>
+<td>|</td>
+<td>从左向右</td>
+</tr>
+<tr>
+<td>11</td>
+<td>&amp;&amp;</td>
+<td>从左向右</td>
+</tr>
+<tr>
+<td>12</td>
+<td>||</td>
+<td>从左向右</td>
+</tr>
+<tr>
+<td>13</td>
+<td>?:</td>
+<td>从右向左</td>
+</tr>
+<tr>
+<td>14</td>
+<td>=、+=、-=、*=、/=、&amp;=、|=、^=、~=、«=、»=、&gt;&gt;&gt;=</td>
+<td>从右向左</td>
+</tr>
+</tbody></table>
 
                 
             </div>
@@ -729,16 +812,16 @@
                     
                         <div class="article-tag">
                             
+                                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                    <span class="chip bg-color">博客</span>
+                                </a>
+                            
                                 <a href="/tags/javase/">
                                     <span class="chip bg-color">javase</span>
                                 </a>
                             
                                 <a href="/tags/java/">
                                     <span class="chip bg-color">java</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                                    <span class="chip bg-color">博客</span>
                                 </a>
                             
                         </div>
@@ -1250,16 +1333,16 @@ new Valine({
                 
                 <div class="card-action article-tags">
                     
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
+                    </a>
+                    
                     <a href="/tags/javase/">
                         <span class="chip bg-color">javase</span>
                     </a>
                     
                     <a href="/tags/java/">
                         <span class="chip bg-color">java</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
                     </a>
                     
                 </div>
@@ -1307,12 +1390,12 @@ new Valine({
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
-                    </a>
-                    
                     <a href="/tags/Hexo/">
                         <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
                     </a>
                     
                     <a href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91/">
@@ -1556,7 +1639,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">9.8k</span>&nbsp;字
+                class="white-color">10k</span>&nbsp;字
             
             
             
