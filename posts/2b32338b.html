@@ -522,21 +522,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-10-30
+                    2021-10-31
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.3k
+                    2.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    8 分
+                    10 分
                 </div>
                 
 
@@ -578,7 +578,7 @@
 <h4 id="②新建-修改-CLASSPATH-变量"><a href="#②新建-修改-CLASSPATH-变量" class="headerlink" title="②新建/修改 CLASSPATH 变量"></a>②新建/修改 CLASSPATH 变量</h4><p>如果存在 CLASSPATH 变量，选中点击编辑<br>如果没有，点击 新建<br>输入/在已有的变量值后面添加：变量名：CLASSPATH<br>变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;点击保存<br>在系统变量区域，选择Path,点击下面的编辑按钮，在弹出的框中选择新建添加2行，一行输入%JAVA_HOME%\bin，一行输入%JAVA_HOME%\jre\bin</p>
 <h4 id="③检查"><a href="#③检查" class="headerlink" title="③检查"></a>③检查</h4><p>打开 cmd，输入 java，出现一连串的指令提示，说明配置成功了:</p>
 <h3 id="（3）为什么配置环境变量"><a href="#（3）为什么配置环境变量" class="headerlink" title="（3）为什么配置环境变量"></a>（3）为什么配置环境变量</h3><p>想要让java命令在任何地方都访问的到</p>
-<h3 id="（4）为什么配置jJAVA-HOME"><a href="#（4）为什么配置jJAVA-HOME" class="headerlink" title="（4）为什么配置jJAVA_HOME"></a>（4）为什么配置jJAVA_HOME</h3><p>因为可能使用到bin目录以外的资源也需要提供一种快捷访问方式</p>
+<h3 id="（4）为什么配置JAVA-HOME"><a href="#（4）为什么配置JAVA-HOME" class="headerlink" title="（4）为什么配置JAVA_HOME"></a>（4）为什么配置JAVA_HOME</h3><p>因为可能使用到bin目录以外的资源也需要提供一种快捷访问方式</p>
 <hr>
 <h2 id="6-运行第一个JAVA程序"><a href="#6-运行第一个JAVA程序" class="headerlink" title="6.运行第一个JAVA程序"></a>6.运行第一个JAVA程序</h2><hr>
 <p>(1)打开cmd进入JAVA程序目录<br>(2)输入javac hello.java<br>(3)输入java hello</p>
@@ -787,11 +787,50 @@
 <h4 id="2-while循环"><a href="#2-while循环" class="headerlink" title="(2)while循环"></a>(2)while循环</h4><p>先判断，在执行。<br>while(循环条件){<br> 循环体；<br> 【控制语句】<br> }    </p>
 <h4 id="3-do-while循环"><a href="#3-do-while循环" class="headerlink" title="(3)do while循环"></a>(3)do while循环</h4><p>先执行，在判断，不论条件成立与否，至少执行一次。<br>do{<br>循环体；<br>【控制语句】<br>}while(循环条件);    </p>
 <hr>
-<h3 id="4、跳转语句"><a href="#4、跳转语句" class="headerlink" title="4、跳转语句"></a>4、跳转语句</h3><pre><code>break: 结束程序，可以使用switch case中，也可以使用在for while do..while中。    
-    如果有嵌套循环，break只结束当前所在的循环。
-continue: 跳出当前此次循环，直接执行下一次循环。只能用于循环中。    </code></pre>
+<h3 id="4、跳转语句"><a href="#4、跳转语句" class="headerlink" title="4、跳转语句"></a>4、跳转语句</h3><p>break: 结束程序，可以使用switch case中，也可以使用在for while do..while中<br>如果有嵌套循环，break只结束当前所在的循环。<br>continue: 跳出当前此次循环，直接执行下一次循环。只能用于循环</p>
 <hr>
-<h1 id="四、数组"><a href="#四、数组" class="headerlink" title="四、数组"></a>四、数组</h1>
+<h1 id="四、数组"><a href="#四、数组" class="headerlink" title="四、数组"></a>四、数组</h1><h2 id="1-什么是数组"><a href="#1-什么是数组" class="headerlink" title="1.什么是数组"></a>1.什么是数组</h2><p>数组：容器 用来存储数据 相同数据的有序集合</p>
+<h2 id="2-如何声明数组"><a href="#2-如何声明数组" class="headerlink" title="2.如何声明数组"></a>2.如何声明数组</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> arr1<span class="token punctuation">;</span>
+<span class="token keyword">int</span> arr2 <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="3-初始化数组"><a href="#3-初始化数组" class="headerlink" title="3.初始化数组"></a>3.初始化数组</h2><h3 id="（1）静态初始化"><a href="#（1）静态初始化" class="headerlink" title="（1）静态初始化"></a>（1）静态初始化</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> arr1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">}</span><span class="token punctuation">;</span><span class="token comment">//此种方式声明和赋值必须放在一起</span>
+<span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> arr2 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">}</span><span class="token punctuation">;</span><span class="token comment">//声明和赋值可以分开</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="（2）动态初始化"><a href="#（2）动态初始化" class="headerlink" title="（2）动态初始化"></a>（2）动态初始化</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="（3）数组的默认初始化"><a href="#（3）数组的默认初始化" class="headerlink" title="（3）数组的默认初始化"></a>（3）数组的默认初始化</h3><p>数组声明以后数据类型不同就会有不同的默认值：<br>byte/short/int/long ——  0<br>float/double  —— 0.0<br>char —–  空字符<br>String —– null<br>引用数据类型的默认值：null            </p>
+<h2 id="4-数组元素的访问"><a href="#4-数组元素的访问" class="headerlink" title="4.数组元素的访问"></a>4.数组元素的访问</h2><h3 id="（1）通过下标访问"><a href="#（1）通过下标访问" class="headerlink" title="（1）通过下标访问"></a>（1）通过下标访问</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> arr1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> arr2 <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>arr1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>arr1<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>arr1<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//数组下标越界异常 java.lang.ArrayIndexOutOfBoundsException</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>arr2<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//空指针异常 java.lang.NullPointerException</span>
+<span class="token comment">/*
+数组通过下标访问元素 下标从0开始
+当访问下标不存在时 会报错
+java.lang.ArrayIndexOutOfBoundsException 数组下标越界异常
+当数组没有指向实体（数组为空），却在实体中操作元素时 会报错
+java.lang.NullPointerException 空指针异常 
+*/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="（2）数组的长度"><a href="#（2）数组的长度" class="headerlink" title="（2）数组的长度"></a>（2）数组的长度</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>arr<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//获取数组长度： 数组名.lenght</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="（3）数组元素的遍历"><a href="#（3）数组元素的遍历" class="headerlink" title="（3）数组元素的遍历"></a>（3）数组元素的遍历</h3><h4 id="①for循环遍历"><a href="#①for循环遍历" class="headerlink" title="①for循环遍历"></a>①for循环遍历</h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> arr <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">,</span><span class="token number">40</span><span class="token punctuation">,</span><span class="token number">50</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="②for-each-方式遍历"><a href="#②for-each-方式遍历" class="headerlink" title="②for each 方式遍历"></a>②for each 方式遍历</h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> arr <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">,</span><span class="token number">40</span><span class="token punctuation">,</span><span class="token number">50</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">:</span> arr<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">lrintln</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="5-数组内存图"><a href="#5-数组内存图" class="headerlink" title="5.数组内存图"></a>5.数组内存图</h2><h3 id="（1）Java虚拟机的内存划分"><a href="#（1）Java虚拟机的内存划分" class="headerlink" title="（1）Java虚拟机的内存划分"></a>（1）Java虚拟机的内存划分</h3><p>为了提高运算效率，就对空间进行了不同区域的划分，因为每一片区域都有特定的处理数据方式和内存管理方式。</p>
+<p><img src="D:\MyBlog\source_posts\picture\1561465258546.png" alt="1561465258546"></p>
+
                 
             </div>
             <hr/>
@@ -1353,7 +1392,7 @@ new Valine({
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            学习JavaSE过程中与遇到知识点及问题解决办法
+                            
                         
                     </div>
                     <div class="publish-info">
@@ -1682,7 +1721,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">11.1k</span>&nbsp;字
+                class="white-color">11.5k</span>&nbsp;字
             
             
             
